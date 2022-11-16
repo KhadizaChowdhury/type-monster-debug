@@ -76,7 +76,6 @@ const gameOver = () => {
   // clear user text
   display.innerHTML = "";
   // make it inactive
-  console.log(display);
   display.classList.add("inactive");
   // show result
   resultModal.innerHTML += `
@@ -136,5 +135,5 @@ setInterval(() => {
   const timeSpent = (currentTime - startTime) / 1000;
 
 
-  document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
+  document.getElementById("show-time").innerHTML = `${startTime ? timeSpent.toFixed(2) : 0} seconds`;
 }, 1000);
