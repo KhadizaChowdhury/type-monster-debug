@@ -32,6 +32,13 @@ body {
   );
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
+  padding: 15px;
+}
+
+.blog-page{
+  color: #fff;
+  float: right;
+  margin: 10px 20px;
 }
 
 #display {
