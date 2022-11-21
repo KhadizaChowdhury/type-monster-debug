@@ -77,6 +77,7 @@ const gameOver = () => {
   display.innerHTML = "";
   // make it inactive
   display.classList.add("inactive");
+  console.log(errorCount, "mistakes founded")
   // show result
   resultModal.innerHTML += `
     <h1>Finished!</h1>
