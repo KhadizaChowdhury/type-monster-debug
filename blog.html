@@ -69,13 +69,23 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              How does the Event Loop works in JavaScript?
+              How many ways to get undefined in javascript?
             </button>
           </h2>
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <p>JavaScript is a single-threaded language. In other words, it can do only one thing at a time. JavaScript executes all operations on a single thread, but using a few smart data structures, gives us the illusion of multi-threading. <strong>The event loop is the secret behind JavaScript's asynchronous programming.</strong></p>
-              <p>JavaScript engine executes a script from the top and works its way down creating execution contexts and pushing and popping functions onto and off the call stack.</p>
+              <p><b>Undefined means, value of the variable is not defined.</b> JavaScript has a global variable undefined whose value is "undefined" and typeof undefined is also "undefined". Remember, undefined is not a constant or a keyword. undefined is a type with exactly one value: undefined. Assigning a new value to it does not change the value of the type undefined.</p>
+              <strong>8 Ways to get Undefined:</strong>
+              <ul>
+                <li>A declared variable without assigning any value to it.</li>
+                <li>Implicit returns of functions due to missing return statements.</li>
+                <li>return statements that do not explicitly return anything.</li>
+                <li>Lookups of non-existent properties in an object.</li>
+                <li>Function parameters that have not passed.</li>
+                <li>Anything that has been set to the value of undefined.</li>
+                <li>Any expression in the form of void(expression)</li>
+                <li>The value of the global variable undefined</li>
+              </ul>
             </div>
           </div>
         </div>
